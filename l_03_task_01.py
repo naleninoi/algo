@@ -8,7 +8,7 @@ numbers = [i for i in range(2, 10)]
 RANGE_START = 2
 RANGE_END = 99
 
-print(f'В диапазоне от {RANGE_START} до {RANGE_END}, чисел:')
+print(f'В диапазоне от {RANGE_START} до {RANGE_END + 1}, чисел:')
 
 for number in numbers:
     counter = 0
