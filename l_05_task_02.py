@@ -37,15 +37,11 @@ for i in range(length - 1, -1, -1):
     digit_1 = hex_to_dec[(num_1[i])]
     digit_2 = hex_to_dec[(num_2[i])]
     sum_ = digit_1 + digit_2 + bonus
-    if sum_ < 16:
-        digit_hex = dec_to_hex[sum_]
-        bonus = 0
-    else:
-        digit_hex = dec_to_hex[sum_ - 16]
-        bonus = 1
+    digit_hex = dec_to_hex[sum_ % 16]
+    bonus = sum_ // 16
     result.appendleft(digit_hex)
-    if i == 0 and bonus == 1:
-        result.appendleft('1')
+    if i == 0 and bonus != 0:
+        result.appendleft(str(bonus))
 
 # вывод результата
 print(f"{''.join(num_1)} + {''.join(num_2)} = {''.join(result)}")
