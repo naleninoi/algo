@@ -44,6 +44,8 @@ for i in range(length - 1, -1, -1):
         digit_hex = dec_to_hex[sum_ - 16]
         bonus = 1
     result.appendleft(digit_hex)
+    if i == 0 and bonus == 1:
+        result.appendleft('1')
 
 # вывод результата
 print(f"{''.join(num_1)} + {''.join(num_2)} = {''.join(result)}")
