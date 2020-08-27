@@ -85,8 +85,21 @@ evens_dic(input_array)
 # во втором массиве сохранить индексы четных элементов первого массива.
 
 # АЛГОРИТМ А-1 использует генератор списка
+#type=<class 'list'>, obj=[1, 2, 5, 7, 9], total size=276
+#type=<class 'list'>, obj=[39, -2, 76, -45, 31, -16, -63, -40, -17, 20], total size=432
+
 # АЛГОРИТМ А-2 использует итерацию по входному массиву
+#type=<class 'list'>, obj=[39, -2, 76, -45, 31, -16, -63, -40, -17, 20], total size=432
+#type=<class 'list'>, obj=[1, 2, 5, 7, 9], total size=276
+#type=<class 'int'>, obj=9, total size=28
+
 # АЛГОРИТМ А-3 использует промежуточный словарь
+#type=<class 'list'>, obj=[39, -2, 76, -45, 31, -16, -63, -40, -17, 20], total size=432
+#type=<class 'dict'>, obj={1: -2, 2: 76, 5: -16, 7: -40, 9: 20}, total size=528
+#type=<class 'list'>, obj=[1, 2, 5, 7, 9], total size=276
+#type=<class 'int'>, obj=9, total size=28
+#type=<class 'int'>, obj=20, total size=28
+#type=<class 'int'>, obj=9, total size=28
 
 # размер исходного массива в каждом случае одинаков и составляет 432 байта
 # размер массива на выходе также одинаков - 276 байт
